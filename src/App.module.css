@@ -40,6 +40,16 @@ ul {
   transform: translateX(0%);
 }
 
+#LightMode {
+  background-color: #e3b261;
+  color: black;
+}
+
+#DarkMode {
+  background-color: rgb(26, 26, 27);
+  color: #e3b261;
+}
+
 ::-webkit-scrollbar {
   width: 5px;
 }

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, createContext } from "react";
 import Styles from "./App.module.css";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -15,8 +15,11 @@ import HullStructure from "./Views/Page-Sections/Hull-Scructure/HullStructure";
 import Manuevering from "./Views/Page-Sections/Manuevering/Manuevering";
 // Page Import End
 
+
 function App() {
   const [backToTop, setBackToTop] = useState(false);
+  const themeContext = createContext(null);
+  // const [theme, setTheme] = useState("LightMode")
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -35,27 +38,33 @@ function App() {
     });
   };
 
-  return (
-    <div className={Styles.App}>
-      <BrowserRouter>
-        <Nav />
-        <Routes>
-          <Route path={"/"} element={<Landing />} />
-          <Route path={"KnotsRopes"} element={<KnotsRopes />} />
-          <Route path={"Sails"} element={<Sails />} />
-          <Route path={"HullStructure"} element={<HullStructure />} />
-          <Route path={"Manuevering"} element={<Manuevering />} />
-        </Routes>
+  // const toggleTheme = () => {
+  //   setTheme((theme) => theme === "LightMode" ? "DarkMode" : "LightMode")
+  // }
 
-        <NavigationIcon
-          onClick={scrollUp}
-          sx={{ fontSize: 30 }}
-          className={`${Styles.Back_To_Top_Icon} ${
-            backToTop ? Styles.Show_Back_To_Top : ""
-          }`}
-        />
-      </BrowserRouter>
-    </div>
+  return (
+    <themeContext.Provider>
+      <div className={`${Styles.App} ${Styles.LightMode}`}>
+        <BrowserRouter>
+          <Nav  />
+          <Routes>
+            <Route path={"/"} element={<Landing />} />
+            <Route path={"KnotsRopes"} element={<KnotsRopes />} />
+            <Route path={"Sails"} element={<Sails />} />
+            <Route path={"HullStructure"} element={<HullStructure />} />
+            <Route path={"Manuevering"} element={<Manuevering />} />
+          </Routes>
+
+          <NavigationIcon
+            onClick={scrollUp}
+            sx={{ fontSize: 30 }}
+            className={`${Styles.Back_To_Top_Icon} ${
+              backToTop ? Styles.Show_Back_To_Top : ""
+            }`}
+          />
+        </BrowserRouter>
+      </div>
+    </themeContext.Provider>
   );
 }
 

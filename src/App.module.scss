@@ -38,13 +38,23 @@ ul {
 
     color: white;
 
-    transition: .5s;
+    transition: 0.5s;
     transform: translateX(100vh);
   }
 
   .Show_Back_To_Top {
-    transform:  translateX(0%);
+    transform: translateX(0%);
   }
+}
+
+#LightMode {
+  background-color: #e3b261;
+  color: black;
+}
+
+#DarkMode {
+  background-color: rgb(26, 26, 27);
+  color: #e3b261;
 }
 
 ::-webkit-scrollbar {
