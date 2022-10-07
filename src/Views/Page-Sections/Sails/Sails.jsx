@@ -1,10 +1,7 @@
-
-
 import React, { useState } from "react";
 import Styles from "../../../Styles/Page-Section-Styles/General/GeneralSectionStyles.module.css";
 
 import SailsData from "../../../Components/Data/Sails/SailsData";
-
 import SailsSwiper from "../../../Components/Swiper/SailsSwiper"
 
 const Sails = () => {
