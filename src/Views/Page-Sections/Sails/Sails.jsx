@@ -1,13 +1,14 @@
 
+
 import React, { useState } from "react";
 import Styles from "../../../Styles/Page-Section-Styles/General/GeneralSectionStyles.module.css";
 
-import KnotsRopesSwiper from "../../../Components/Swiper/KnotsRopesSwiper";
+import SailsData from "../../../Components/Data/Sails/SailsData";
 
-import KnotsRopesData from "../../../Components/Data/Knots-Ropes/KnotsRopesData";
+import SailsSwiper from "../../../Components/Swiper/SailsSwiper"
 
 const Sails = () => {
-  const [sectionData, setSectionData] = useState(KnotsRopesData);
+  const [sectionData, setSectionData] = useState(SailsData);
 
   return (
     <div className={Styles.Section}>
@@ -24,7 +25,7 @@ const Sails = () => {
 
             <p className={Styles.Section_Description}>{Description}</p>
 
-            <KnotsRopesSwiper />
+            <SailsSwiper />
           </>
         );
       })}
