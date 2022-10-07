@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+ul {
+  list-style: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.App {
+  background-color: rgb(26, 26, 27);
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+  position: relative;
+
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  width: 100%;
+
+  .Back_To_Top_Icon {
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    z-index: 99;
+
+    color: white;
+
+    transition: .5s;
+    transform: translateX(100vh);
+  }
+
+  .Show_Back_To_Top {
+    transform:  translateX(0%);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: rgb(0, 0, 0) 3px 3px 6px 0px inset,
+    rgba(0, 0, 0) -3px -3px 6px 1px inset;
+  background: rgb(26, 26, 27);
+}
+
+::-webkit-scrollbar-thumb {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background: #e3b261;
+}
