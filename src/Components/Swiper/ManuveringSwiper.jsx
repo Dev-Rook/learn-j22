@@ -15,7 +15,7 @@ import "swiper/css/scrollbar";
 
 import SwiperData from "../Data/Sails/SwiperData";
 
-const SailsSwiper = () => {
+const ManuveringSwiper = () => {
   const [sectionData, setsectionData] = useState(SwiperData);
   return (
     <div className={Styles.Wrapper}>
@@ -89,4 +89,4 @@ const SailsSwiper = () => {
   );
 };
 
-export default SailsSwiper;
+export default ManuveringSwiper;

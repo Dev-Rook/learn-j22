@@ -13,9 +13,9 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 // import "swiper/css/effect-fade ";
 
-import SwiperData from "../Data/Sails/SwiperData";
+import SwiperData from "../Data/Hull-Structure/SwiperData";
 
-const SailsSwiper = () => {
+const HullStructureSwiper = () => {
   const [sectionData, setsectionData] = useState(SwiperData);
   return (
     <div className={Styles.Wrapper}>
@@ -89,4 +89,4 @@ const SailsSwiper = () => {
   );
 };
 
-export default SailsSwiper;
+export default HullStructureSwiper;

@@ -9,6 +9,7 @@
   width: 1250px;
 }
 .Section .Section_Header_Image_Container {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,5 +47,15 @@
 @media only screen and (max-width: 1250px) {
   .Section {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .Section .Section_Header_Image_Container {
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .Section .Section_Header_Image_Container {
+    height: 250px;
   }
 }/*# sourceMappingURL=GeneralSectionStyles.module.css.map */

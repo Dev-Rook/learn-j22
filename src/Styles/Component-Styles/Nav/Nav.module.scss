@@ -130,3 +130,26 @@
     width: 100%;
   }
 }
+
+
+@media only screen and (max-width: 768px) {
+  .NavBar {
+    .Left_Side {
+      .Brand {
+        display: none;
+      }
+    }
+
+    .Right_Side {
+      .Navlink_Container {
+        display: none;
+      }
+      .Menu_Icon {
+        display: block;
+      }
+    }
+    .Mobile_Menu {
+      display: flex;
+    }
+  }
+}
