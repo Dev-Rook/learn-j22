@@ -11,7 +11,7 @@ const KnotsRopes = () => {
   return (
     <div className={Styles.Section}>
       {sectionData.map((info) => {
-        const {id, HeaderImage, Title, Description} = info;
+        const { id, HeaderImage, Title, Description } = info;
         return (
           <>
             <div className={Styles.Section_Header_Image_Container} key={id}>
@@ -19,7 +19,6 @@ const KnotsRopes = () => {
             </div>
 
             <h3 className={Styles.Section_Title}>{Title}</h3>
-
 
             <p className={Styles.Section_Description}>{Description}</p>
 

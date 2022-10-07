@@ -1,34 +1,30 @@
-.Swiper {
-  display: flex;
-  flex-direction: column;
-
-  padding: 5px;
-//   overflow: hidden;
-
+.Wrapper {
   justify-content: center;
   align-items: center;
 
-  height: fit-content;
+  overflow: hidden;
+  position: relative;
+  display: flex;
   width: 100%;
-
-  transition: 0.5s;
-
-  .Slide {
+  .Swiper {
+    display: flex;
+    padding: 5px;
+  
     .Card {
       box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
         rgba(0, 0, 0, 0.22) 0px 15px 12px;
       display: flex;
-
+  
       justify-content: center;
       align-items: center;
-
+  
       overflow: hidden;
-
+  
       height: 250px;
       width: 250px;
-
+  
       transition: 0.5s;
-
+  
       .Display_Image {
         border: none;
         outline: none;
@@ -38,12 +34,12 @@
         object-fit: cover;
         transition: 0.5s;
       }
-
+  
       .Name {
         position: absolute;
         bottom: 10px;
         left: 10px;
-
+  
         color: white;
         font-family: "Nunito", sans-serif;
         font-style: italic;
@@ -51,5 +47,11 @@
         font-weight: 200;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .Swiper {
+    width: 100%;
   }
 }

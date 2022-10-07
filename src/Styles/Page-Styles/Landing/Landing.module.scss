@@ -1,18 +1,16 @@
 .Landing {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    gap: 50px;
-    padding-top: 100px;
+  gap: 50px;
+  padding-top: 100px;
 
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 
-    height: 100%;
-    width: 1250px;
+  height: 100%;
+  width: 1250px;
 }
-
-
 
 // Keyframe Animations Start
 // Keyframe Animations End
@@ -20,10 +18,9 @@
 // Media Queries Start
 
 @media only screen and (max-width: 1250px) {
-    .Landing {
-      width: 100%;
-    }
+  .Landing {
+    width: 100%;
   }
-  
-  // Media Queries End
-  
+}
+
+// Media Queries End

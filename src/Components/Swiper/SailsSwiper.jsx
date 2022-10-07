@@ -18,7 +18,7 @@ import SwiperData from "../Data/Sails/SwiperData";
 const KnotsRopesSwiper = () => {
   const [sectionData, setsectionData] = useState(SwiperData);
   return (
-    <div>
+    <div className={Styles.Wrapper}>
       <Swiper
         speed={800}
         modules={[Navigation, FreeMode, Mousewheel, Autoplay]}

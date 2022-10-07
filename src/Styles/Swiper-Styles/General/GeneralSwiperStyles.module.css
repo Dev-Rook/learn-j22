@@ -1,16 +1,16 @@
-.Swiper {
-  display: flex;
-  flex-direction: column;
-  padding: 5px;
+.Wrapper {
   justify-content: center;
   align-items: center;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  overflow: hidden;
+  position: relative;
+  display: flex;
   width: 100%;
-  transition: 0.5s;
 }
-.Swiper .Slide .Card {
+.Wrapper .Swiper {
+  display: flex;
+  padding: 5px;
+}
+.Wrapper .Swiper .Card {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   display: flex;
   justify-content: center;
@@ -20,7 +20,7 @@
   width: 250px;
   transition: 0.5s;
 }
-.Swiper .Slide .Card .Display_Image {
+.Wrapper .Swiper .Card .Display_Image {
   border: none;
   outline: none;
   height: 100%;
@@ -30,7 +30,7 @@
      object-fit: cover;
   transition: 0.5s;
 }
-.Swiper .Slide .Card .Name {
+.Wrapper .Swiper .Card .Name {
   position: absolute;
   bottom: 10px;
   left: 10px;
@@ -39,4 +39,10 @@
   font-style: italic;
   font-size: 15px;
   font-weight: 200;
+}
+
+@media only screen and (max-width: 1250px) {
+  .Swiper {
+    width: 100%;
+  }
 }/*# sourceMappingURL=GeneralSwiperStyles.module.css.map */
