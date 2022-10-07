@@ -9,10 +9,10 @@ import Nav from "./Components/Main/Nav/Nav";
 
 // Page Import Start
 import Landing from "./Views/Landing/Landing";
-import KnotsRopes from "./Views/Knots-Ropes/KnotsRopes";
-import Sails from "./Views/Sails/Sails";
-import HullStructure from "./Views/Hull-Scructure/HullStructure";
-import Manuevering from "./Views/Manuevering/Manuevering";
+import KnotsRopes from "./Views/Page-Sections/Knots-Ropes/KnotsRopes";
+import Sails from "./Views/Page-Sections/Sails/Sails";
+import HullStructure from "./Views/Page-Sections/Hull-Scructure/HullStructure";
+import Manuevering from "./Views/Page-Sections/Manuevering/Manuevering";
 // Page Import End
 
 function App() {

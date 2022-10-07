@@ -1,0 +1,42 @@
+.Swiper {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  transition: 0.5s;
+}
+.Swiper .Slide .Card {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 250px;
+  width: 250px;
+  transition: 0.5s;
+}
+.Swiper .Slide .Card .Display_Image {
+  border: none;
+  outline: none;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.5s;
+}
+.Swiper .Slide .Card .Name {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-style: italic;
+  font-size: 15px;
+  font-weight: 200;
+}/*# sourceMappingURL=GeneralSwiperStyles.module.css.map */

@@ -1,0 +1,51 @@
+.Section {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  gap: 20px;
+  overflow: hidden;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 1250px;
+}
+.Section .Section_Header_Image_Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 400px;
+  width: 100%;
+  transition: 0.5s;
+}
+.Section .Section_Header_Image_Container .Section_Image {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.5s;
+}
+.Section .Section_Title {
+  color: #e3b261;
+  font-family: "Nunito", sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  margin: auto;
+  margin-left: 0px;
+}
+.Section .Section_Description {
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 200;
+  margin: auto;
+  margin-left: 0px;
+}
+
+@media only screen and (max-width: 1250px) {
+  .Section {
+    width: 100%;
+  }
+}/*# sourceMappingURL=GeneralSectionStyles.module.css.map */

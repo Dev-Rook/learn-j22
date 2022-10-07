@@ -1,0 +1,16 @@
+.Landing {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-top: 100px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 1250px;
+}
+
+@media only screen and (max-width: 1250px) {
+  .Landing {
+    width: 100%;
+  }
+}/*# sourceMappingURL=Landing.module.css.map */
